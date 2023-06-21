@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="x-icon" href="logo.png">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="portfolio.css">
+
+    <title>Hi I'm Dom,</title>
+</head>
+<body>
+        <Header>
+            <div class="logo">
+                <h1><a href="portfolio.html">DOM.dev</a></h1>
+            </div>
+            
+            <div class="nav-menu">
+                <nav>
+                  <ul>
+                    
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </nav>  
+                
+            </div>
+        </Header>
+        <main>
+             
+                    <aside>
+                        <div  class="aside">
+
+
+                            <a href="https://www.facebook.com/rmpunkguy" id="facebook"><i
+                                class="fa-brands fa-facebook"></i>Facebook</a>
+                
+                            <a href="#" id="instagram"><i
+                                class="fa-brands fa-instagram" ></i>Instagram</a>
+                
+                            <a href="https://discord.gg/3N8MX7Mu" id="discord"><i 
+                                class="fa-brands fa-discord"></i>Discord</a>
+                            <a href="https://www.twitch.tv/aestheticdot" id="twitch"><i
+                                class="fa-brands fa-twitch"></i>Twitch</a>
+            
+                                <div class="musika">
+                                    <p id="musicoff">
+                                        <button onclick="pauseAudio()" type="button">PAUSE &nbsp;&nbsp;&nbsp;<i class="fa-solid fa-volume-xmark"></i></button></p>
+                                    <p id="musicon">
+                                        <button onclick="playAudio()" type="button">PLAY &nbsp;&nbsp;&nbsp;<i class="fa-solid fa-volume-high"></i></button></p>
+                                    <p id="darkmode">  
+                                        <button onclick="myFunction()">Theme&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-lightbulb">&nbsp;</i></button></p>
+                                </div>   
+                          </div>
+                          
+                    </aside>
+            
+                <section class="about">
+                    
+                    <article>
+                        <br/><br/><br/><br/><br/>
+                        <p id="una" style="font-size: 60px; color: gold; "> Hi I'm Dom,</p><br/><br/>
+                        <p id="pangalwa" style="font-size: 50px; color: cyan; margin-left: 5vw;">A Full Stack Web Developer</p><br/>
+                        <p id="pangatlo" style="font-size: 30px; text-align: center;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam iusto, dolor numquam ea iure cum amet consectetur, voluptatibus unde exercitationem vitae laborum ratione excepturi nulla quo sunt beatae, perspiciatis sapiente.</p>
+                            
+                    </article>
+
+                    <img src="me2.JPEG" id="me2" />
+                
+                </section>
+        </main>
+        <audio id="kanta">
+            <source src="mean-it.mp3" type="audio/ogg">
+            <source src="mean-it.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        <script>
+            var x = document.getElementById("kanta"); 
+            
+            function playAudio() { 
+              x.play(); 
+            } 
+            function pauseAudio() { 
+              x.pause(); 
+            } 
+            </script>
+            <script>
+              function myFunction() {
+                 var element = document.body;
+                 element.classList.toggle("dark-mode");
+              }
+              </script>
+        
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="shortcut icon" type="x-icon" href="logo.png">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="about.css">
+
+    <title>Hi I'm Dom,</title>
+</head>
+<body>
+        <Header>
+            <div class="logo">
+                <h1><a href="portfolio.html">DOM.dev</a></h1>
+            </div>
+            
+            <div class="nav-menu">
+                <nav>
+                  <ul>
+                    
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </nav>  
+                
+            </div>
+        </Header>
+        <main>
+             
+                    <aside>
+                        <div  class="aside">
+
+
+                            <a href="https://www.facebook.com/rmpunkguy" id="facebook"><i
+                                class="fa-brands fa-facebook"></i>Facebook</i></a>
+                
+                            <a href="#" id="instagram"><i
+                                class="fa-brands fa-instagram"></i>Instagram</i></a>
+                
+                            <a href="https://discord.gg/3N8MX7Mu" id="discord"><i 
+                                class="fa-brands fa-discord"></i>Discord</i></a>
+                            <a href="https://www.twitch.tv/aestheticdot" id="twitch"><i
+                                class="fa-brands fa-twitch"></i>Twitch</i></a>
+            
+                                <div class="musika">
+                                    <p id="musicoff">
+                                        <button onclick="pauseAudio()" type="button">PAUSE &nbsp;&nbsp;&nbsp;<i class="fa-solid fa-volume-xmark"></i></button></p>
+                                    <p id="musicon">
+                                        <button onclick="playAudio()" type="button">PLAY &nbsp;&nbsp;&nbsp;<i class="fa-solid fa-volume-high"></i></button></p>
+                                    <p id="darkmode">  
+                                        <button onclick="myFunction()">Theme&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-lightbulb">&nbsp;</i></button></p>
+                                </div>   
+                          </div>
+                          
+                    
+                    </aside>
+                    <section class="about",>
+                        <h1 class= "animate__animated animate__backInDown">About Me</h1>
+                        <p class= "animate__animated animate__backInDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eaque quidem optio explicabo velit. Dolore ab accusamus corrupti a fuga tempora nam alias natus obcaecati. Nihil non quam unde! Ut!Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quidem accusantium, rem nostrum, quod aperiam pariatur, quisquam amet officiis eaque reiciendis suscipit in veritatis consequuntur! Deserunt dolores illo a dignissimos et repudiandae quaerat, libero, praesentium minima, ex expedita nobis! Exercitationem omnis praesentium tempora perspiciatis, placeat consequuntur explicabo et quidem aliquam!</p>
+                        
+                        
+                        <h3 class= "animate__animated animate__backInDown">Recent Achievements :</h3>
+
+                        <P 
+                           class= "animate__animated animate__backInDown">
+                        <i class="fa-brands fa-html5"></i>HTML5
+                        <i class="fa-brands fa-css3-alt"></i>CSS
+
+                        <i class="fa-brands fa-square-js"></i>Javascript
+                        <i class="fa-brands fa-bootstrap"></i>Bootstrap
+                        
+
+                        <i class="fa-brands fa-php"></i>PHP
+                        <i class="fa-brands fa-laravel"></i>Laravel
+                    </P>
+            
+                    <article>
+                            
+                     </article>
+                
+                
+                </section>
+        </main>
+        <audio id="kanta">
+            <source src="avengers.mp3" type="audio/ogg">
+            <source src="avengers.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+
+          
+        <script>
+            var x = document.getElementById("kanta"); 
+            
+            function playAudio() { 
+              x.play(); 
+            } 
+            function pauseAudio() { 
+              x.pause(); 
+            } 
+            </script>
+
+        <script>
+              function myFunction() {
+                 var element = document.body;
+                 element.classList.toggle("dark-mode");
+              }
+        </script>
+    
+</body>
+</html>
